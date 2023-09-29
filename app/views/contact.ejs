@@ -1,0 +1,39 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+   
+
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to <%= title %> page</h1>
+    <p>Contact Us</p>
+    <form action="mailto:contact@yourdomain.com"
+    method="POST"
+    enctype="multipart/form-data"
+    name="EmailForm">
+        First Name:<br>
+        <input type="text" size="19" name="First-Name"><br><br>
+        Last Name:<br>
+        <input type="text" size="19" name="First-Name"><br><br>
+        Contact Number:<br>
+        <input type="text" size="19" name="Contact Number"><br><br>
+        Email:<br>
+        <input type="email" name="Contact-Email"><br><br> 
+        Message<br>
+        <input type="text" size="30" name="Contact Number"><br><br>
+
+        <button type="submit" value="Submit">Send</button>
+
+        <p>Homepage</p>
+    <a href="/app/views/index.ejs">Home</a>
+    </form>  
+    </div>
+    </main>
+    
+    <!--bottom nav-->
+    
+   
+   
+      <!--script section-->
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>
+   
